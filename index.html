@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dear. | 心と売上のシークレット・パートナー</title>
+    <meta name="description" content="No.1を目指す貴女のための、心と売上のシークレット・マネージャーアプリ「Dear.」。">
+
+    <meta property="og:title" content="Dear. | 心と売上のシークレット・パートナー">
+    <meta property="og:description" content="顧客管理も、メンタルケアも。キャバ嬢のための魔法のアプリ。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://spc-dear-lp.netlify.app/">
+    <meta property="og:image" content="https://spc-dear-lp.netlify.app/thumbnail.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://spc-dear-lp.netlify.app/thumbnail.jpg">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Zen+Kaku+Gothic+New:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --accent-gold: #D4AF37;
+            --bg-dark: #050505;
+        }
+        body {
+            font-family: 'Zen Kaku Gothic New', sans-serif;
+            background-color: var(--bg-dark);
+            color: #ffffff;
+            overflow-x: hidden;
+        }
+        .font-logo { font-family: 'Dancing Script', cursive; }
+        
+        /* グラデーションテキスト */
+        .text-gradient {
+            background: linear-gradient(135deg, #D4AF37 0%, #F4E285 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        /* 光るボタン */
+        .btn-glow {
+            background: linear-gradient(135deg, #D4AF37 0%, #b38728 100%);
+            box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
+            transition: all 0.3s ease;
+        }
+        .btn-glow:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 30px rgba(212, 175, 55, 0.6);
+        }
+        
+        /* 赤い緊急ボタン（限定用） */
+        .btn-limit {
+            background: linear-gradient(135deg, #ef4444 0%, #b91c1c 100%);
+            box-shadow: 0 0 20px rgba(239, 68, 68, 0.4);
+            transition: all 0.3s ease;
+        }
+        .btn-limit:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 30px rgba(239, 68, 68, 0.6);
+        }
+
+        /* ふわっと浮き出るアニメーション */
+        .fade-up {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        .fade-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+
+    <header class="fixed w-full z-50 bg-black/80 backdrop-blur-md border-b border-white/10">
+        <div class="max-w-md mx-auto px-5 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-logo text-gradient">Dear.</h1>
+            <a href="https://spc-jp.github.io/dear-apl/" target="_blank" rel="noopener noreferrer" class="text-xs border border-[#D4AF37] text-[#D4AF37] px-3 py-1.5 rounded-full hover:bg-[#D4AF37] hover:text-black transition">
+                アプリを開く
+            </a>
+        </div>
+    </header>
+
+    <section class="pt-32 pb-20 px-6 text-center max-w-md mx-auto relative overflow-hidden">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-64 h-64 bg-[#D4AF37] rounded-full blur-[100px] opacity-20 -z-10"></div>
+
+        <p class="text-sm tracking-widest mb-4 opacity-80 fade-up">For Professional Cast</p>
+        <h2 class="text-4xl font-bold leading-tight mb-6 fade-up" style="transition-delay: 0.1s;">
+            <span class="text-gradient">No.1</span>を目指す<br>貴女だけの<br>シークレット<br>パートナー。
+        </h2>
+        <p class="text-sm opacity-60 mb-10 leading-relaxed fade-up" style="transition-delay: 0.2s;">
+            顧客管理も、売上目標も、<br>そして誰にも言えない心のケアも。<br>
+            すべてをこのアプリひとつで。
+        </p>
+        
+        <div class="fade-up" style="transition-delay: 0.3s;">
+            <div class="mb-2 text-red-400 text-xs font-bold animate-pulse">
+                <i class="fas fa-exclamation-circle mr-1"></i>残りわずか！限定100部
+            </div>
+            <a href="https://spc-jp.github.io/dear-apl/" target="_blank" rel="noopener noreferrer" class="btn-glow block w-full py-4 rounded-full text-black font-bold text-lg mb-4">
+                限定価格 ¥980 で手に入れる
+            </a>
+            <p class="text-[10px] opacity-60">通常 ¥1,980 → <span class="text-red-400 font-bold">¥980 (50%OFF)</span></p>
+        </div>
+    </section>
+
+    <section class="py-20 bg-white/5">
+        <div class="max-w-md mx-auto px-6">
+            <div class="text-center mb-12 fade-up">
+                <i class="fas fa-question-circle text-3xl mb-4 text-gray-500"></i>
+                <h3 class="text-xl font-bold mb-4">こんな悩みありませんか？</h3>
+                <ul class="text-left text-sm space-y-3 opacity-80 bg-black/30 p-6 rounded-xl border border-white/10">
+                    <li><i class="fas fa-check text-red-400 mr-2"></i> お客様の誕生日、LINEのメモで管理してて探すのが大変...</li>
+                    <li><i class="fas fa-check text-red-400 mr-2"></i> 「ワイン好き」なお客様をすぐに思い出せない...</li>
+                    <li><i class="fas fa-check text-red-400 mr-2"></i> 嫌なことがあった時、誰かに聞いてほしいけど言えない...</li>
+                </ul>
+            </div>
+
+            <div class="text-center fade-up">
+                <i class="fas fa-arrow-down text-2xl text-[#D4AF37] mb-4 animate-bounce"></i>
+                <h3 class="text-2xl font-bold">その悩み、<span class="font-logo text-3xl mx-1 text-[#D4AF37]">Dear.</span> が<br>解決します。</h3>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 max-w-md mx-auto px-6 space-y-16">
+        
+        <div class="text-center fade-up">
+            <div class="w-16 h-16 mx-auto bg-pink-900/50 rounded-full flex items-center justify-center mb-4 border border-pink-500/30">
+                <i class="fas fa-heart text-2xl text-pink-400"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3">心に寄り添うメンタルケア</h3>
+            <p class="text-sm opacity-60 leading-relaxed">
+                「疲れた」「褒めて」ボタンを押すだけで、<br>
+                設定した「推し（メンター）」が<br>
+                80種類以上の言葉で貴女を全肯定。<br>
+                写真設定機能で、もっと近くに感じられます。
+            </p>
+        </div>
+
+        <div class="text-center fade-up">
+            <div class="w-16 h-16 mx-auto bg-blue-900/50 rounded-full flex items-center justify-center mb-4 border border-blue-500/30">
+                <i class="fas fa-users text-2xl text-blue-400"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3">一瞬で探せる顧客管理</h3>
+            <p class="text-sm opacity-60 leading-relaxed">
+                名前はもちろん、「ワイン」「ゴルフ」などの<br>
+                キーワードやメモ内容でも検索可能。<br>
+                「今月誕生日の人」もワンタップで表示。<br>
+                チャンスを絶対に逃しません。
+            </p>
+        </div>
+
+        <div class="text-center fade-up">
+            <div class="w-16 h-16 mx-auto bg-yellow-900/50 rounded-full flex items-center justify-center mb-4 border border-yellow-500/30">
+                <i class="fas fa-palette text-2xl text-yellow-400"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3">貴女好みにカスタマイズ</h3>
+            <p class="text-sm opacity-60 leading-relaxed">
+                その日の気分に合わせて、<br>
+                Gold / Purple / Pink の3色に着せ替え。<br>
+                売上目標の進捗バーを見るたび、<br>
+                モチベーションが上がります。
+            </p>
+        </div>
+
+    </section>
+
+    <section class="py-12 bg-[#111] border-y border-white/5">
+        <div class="max-w-md mx-auto px-6 flex items-center gap-4 fade-up">
+            <i class="fas fa-lock text-3xl text-gray-400"></i>
+            <div class="text-left">
+                <h4 class="font-bold mb-1">完全プライベート仕様</h4>
+                <p class="text-xs opacity-60">
+                    入力したデータはあなたの端末内にのみ保存されます。
+                    外部に漏れる心配はなく、秘密のメモとして安心してお使いいただけます。
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 px-6 max-w-md mx-auto">
+        <div class="glass-card bg-gradient-to-br from-gray-900 to-black border border-[#D4AF37] rounded-2xl p-8 text-center fade-up relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-32 h-32 bg-[#D4AF37] blur-[80px] opacity-20"></div>
+            
+            <h3 class="text-sm font-bold text-[#D4AF37] mb-2 tracking-widest">RELEASE SPECIAL</h3>
+            <div class="bg-red-600 text-white text-[10px] font-bold px-3 py-1 rounded-full inline-block mb-3 animate-pulse">
+                先着100部限定
+            </div>
+            
+            <div class="mb-4">
+                <p class="text-xs opacity-50 line-through mb-1">通常価格 ¥1,980</p>
+                <div class="flex justify-center items-end gap-1 text-white">
+                    <span class="text-5xl font-bold text-gradient">¥980</span>
+                    <span class="text-xs opacity-80 mb-2">（税込）</span>
+                </div>
+                <p class="text-[10px] text-[#D4AF37] mt-2 border border-[#D4AF37] inline-block px-2 py-0.5 rounded">※買い切り・追加料金なし</p>
+            </div>
+
+            <p class="text-xs opacity-70 mb-6 leading-relaxed">
+                お客様からの<span class="text-[#D4AF37] font-bold">ドリンク1杯分</span>以下の価格。<br>
+                たった一度の指名で、元が取れてしまいます。<br>
+                100部完売後は通常価格に戻ります。
+            </p>
+
+            <ul class="text-sm text-left space-y-2 opacity-80 mb-8 inline-block">
+                <li><i class="fas fa-check text-[#D4AF37] mr-2"></i> 顧客データ無制限登録</li>
+                <li><i class="fas fa-check text-[#D4AF37] mr-2"></i> 80種以上のメンタルケア</li>
+                <li><i class="fas fa-check text-[#D4AF37] mr-2"></i> ずっと使える買い切り型</li>
+            </ul>
+
+            <a href="https://spc-jp.github.io/dear-apl/" target="_blank" rel="noopener noreferrer" class="btn-glow block w-full py-3 rounded-full text-black font-bold text-sm">
+                今すぐダウンロードする
+            </a>
+        </div>
+    </section>
+
+    <section class="py-20 px-6 text-center max-w-md mx-auto">
+        <h2 class="text-xl font-bold mb-6 fade-up">今のやり方で、<br>満足していますか？</h2>
+        <div class="fade-up">
+            <a href="https://spc-jp.github.io/dear-apl/" target="_blank" rel="noopener noreferrer" class="btn-limit block w-full py-4 rounded-full text-white font-bold text-lg mb-6">
+                No.1への投資を始める (¥980)
+            </a>
+            <div class="flex justify-center gap-4 text-2xl opacity-50">
+                <i class="fab fa-apple"></i>
+                <i class="fab fa-android"></i>
+                <i class="fas fa-desktop"></i>
+            </div>
+            <p class="text-xs opacity-40 mt-2">Webブラウザですぐに使えます</p>
+        </div>
+    </section>
+
+    <footer class="text-center py-8 border-t border-white/5 text-[10px] opacity-30">
+        &copy; 2024 Dear. Project All Rights Reserved.
+    </footer>
+
+    <script>
+        // スクロール時のフェードインアニメーション
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
